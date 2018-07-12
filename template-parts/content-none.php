@@ -13,7 +13,7 @@
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'landlistening-pdx' ); ?></h1>
 	</header><!-- .page-header -->
-
+    content-none.php
 	<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :

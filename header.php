@@ -25,4 +25,5 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
 	<header id="masthead" class="site-header">
+        header.php
 	   <div id="content" class="site-content">
