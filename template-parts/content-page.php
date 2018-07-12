@@ -10,10 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    content-page.php
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-    content-page.php
 	<?php landlistening_pdx_post_thumbnail(); ?>
 
 	<div class="entry-content">
