@@ -19,7 +19,13 @@ get_header();
 		<main id="main" class="site-main">
             page.php
 
-		<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+		endwhile; // End of the loop.
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
