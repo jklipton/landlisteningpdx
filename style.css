@@ -745,6 +745,11 @@ nav {
   grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
   grid-template-rows: 1fr 37.5% 1fr 37.5%; }
 
+.site-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
+  grid-template-rows: 1fr 37.5% 1fr 37.5%; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
