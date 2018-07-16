@@ -1,7 +1,5 @@
-.container {
+nav li .pagenav{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 75px auto 1fr 60px;
-    grid-column-gap: 1rem;
-    grid-template-areas: "nav nav" "hero hero" "main side" "foot foot";
+    grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
+    grid-template-rows: 1fr 37.5% 1fr 37.5%;
   }

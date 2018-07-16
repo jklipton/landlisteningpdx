@@ -19,9 +19,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
 	<header id="masthead" class="site-header">
-        header.php test
+        header.php
 		<nav class="site-nav">
-		<?php wp_list_pages(); ?>
+		<?php wp_list_pages('title_li='); ?>
 		</nav>
 	</header>
 	   <div id="content" class="site-content">
