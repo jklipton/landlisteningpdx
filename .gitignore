@@ -67,6 +67,7 @@ typings/
 /sitemap.*
 /wp-config.php
 *.sql
+/.sass-cache
 
 # Hidden files
 *.DS_Store
