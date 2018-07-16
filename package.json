@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jklipton/landlisteningpdx#readme",
   "devDependencies": {
+    "eslint": "^5.1.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0"
   }
