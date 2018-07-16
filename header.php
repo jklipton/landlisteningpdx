@@ -17,8 +17,11 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
-		<!-- header.php -->
+
+	<!-- header.php -->
+	<header id="masthead" class="site-header">
 		<nav class="site-nav">
-			<?php wp_list_pages('title_li='); ?>
+		<?php wp_list_pages('title_li='); ?>
 		</nav>
+	</header>
 	   <div id="content" class="site-content">
