@@ -1,10 +1,19 @@
 nav {
+    background-color: peachpuff;
     display: grid;
     grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
     grid-template-rows: 1fr 37.5% 1fr 37.5%;
   }
 
 .site-nav {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
+    grid-template-rows: 1fr 37.5% 1fr 37.5%;
+  }
+
+nav.site-nav {
+    background-color: yellow;
     display: grid;
     grid-template-columns: 1fr 1fr 35% 2fr 35% 1fr 1fr;
     grid-template-rows: 1fr 37.5% 1fr 37.5%;
