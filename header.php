@@ -21,7 +21,7 @@
 	<!-- header.php -->
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
-		<?php wp_list_pages('title_li='); ?>
+		<?php wp_list_pages('title_li=&sort_column=menu_order'); ?>
 		</nav>
 	</header>
 	   <div id="content" class="site-content">
