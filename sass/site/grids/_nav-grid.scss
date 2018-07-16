@@ -3,8 +3,16 @@ nav {
     display: grid;
     grid-template-columns: 3fr 35% 2fr 35% 1fr 3fr;
     grid-template-rows: 1fr 35% 2fr 35% 1fr;
+    grid-template-areas: ". . top-nav . ." "." "left-nav . . . right-nav" "." ". . bot-nav . ."
 
     > * { visibility: hidden; }
     li { visibility: visible; }
+    
+    li:first-child, li:last-child{
+      grid-column-start: 3;
+    }
 
+    li:last-child{
+      grid-row-start: 5
+    }
   }
