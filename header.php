@@ -20,4 +20,8 @@
 
 	<header id="masthead" class="site-header">
         header.php
+		<nav class="site-nav">
+		<?php wp_list_pages(); ?>
+		</nav>
+	</header>
 	   <div id="content" class="site-content">
