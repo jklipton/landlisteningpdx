@@ -31,11 +31,11 @@ $links = [
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
 	<!-- header.php -->
+	<?php $current_post ?>
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
 		<?php 
-		$current_post;
-		$links[$current_post][1];
+		$links[$current_post][1]
 		// $currentLinks = $links[the_title()];
 
 		// // for ($i = 0; $i <= count($currentLinks); $i++) {
