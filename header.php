@@ -22,6 +22,7 @@ $current_post = the_title();
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
 	<!-- header.php -->
+	<?php $current_post ?>
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
 		<?php wp_list_pages('title_li=&sort_column=menu_order'); ?>
