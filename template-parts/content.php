@@ -9,7 +9,7 @@
 
 ?>
 content.php
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section id="post-<?php the_title(); ?>" class="<?php post_class(); ?>  role="page">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -56,4 +56,4 @@ content.php
 	<footer class="entry-footer">
 		<?php landlistening_pdx_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</section><!-- #post-<?php the_ID(); ?> -->
