@@ -3,13 +3,17 @@
  * @package Landlistening_PDX
  */
 
-$current_post = the_title();
+$about = array('About Sarah', '/about');
+$home = array('Landlistening', '/');
+$test = array('Testimonials', '/testimonials');
+$contact = array('Contact', '/contact');
+
 $links = [
-	"Landlistening" => array(),
-	"About" => array(),
-	"Testimonials" => array(),
-	"Contact" => array(),
-]
+	"Landlistening" => array(null, $about, $test, $contact),
+	"About" => array(null, $test, $home, $contact),
+	"Testimonials" => array(null, $home, $about, $contact),
+	"Contact" => array($home, $about, $test, null),
+];
 
 ?>
 <!doctype html>
@@ -30,7 +34,14 @@ $links = [
 	<?php $current_post ?>
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
-		<?php wp_list_pages('title_li=&sort_column=menu_order'); ?>
+		<?php 
+		$currentLinks = $links[the_title()];
+
+		for ($i = 0; $i <= count($currentLinks); $i++) {
+			$thisLink = $currentLinks[$i];
+			if(!$thisLink) continue;
+			echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
+		}?>
 		</nav>
 	</header>
 	   <div id="content" class="site-content">
