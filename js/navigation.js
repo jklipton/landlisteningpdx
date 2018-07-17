@@ -6,8 +6,8 @@
  */
 
 (function() {
-	console.log('I run');
-}
+  console.log('I run');
+});
 
 // (function() {
 //   var container, button, menu, links, i, len;
