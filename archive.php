@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-
+archive.php
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
