@@ -16,43 +16,23 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,700i|Playfair+Display:900i|Zilla+Slab:400i,600i" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
 header.php
 <body <?php body_class(); ?>>
-<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$landlistening_pdx_description = get_bloginfo( 'description', 'display' );
-			if ( $landlistening_pdx_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $landlistening_pdx_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'landlistening-pdx' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<nav id="site-navigation" class="main-navigation">
+		<!-- Notes: Menu is hidden on desktop view, 
+		links set for "Landing Page" and dynamically changed in pageView.js on navigation.  
+		If updating, please leave set for "Landing Page" and set "Target" attribute to 
+		the EXACT id of the destination section as seen in the "main" portion of the HTML. -->
+		<button class="menu bot-button hidden menu-toggle" aria-label="Menu" aria-controls="primary-menu" aria-expanded="false"><h2>Menu</h2></button>
+		<div id="top-nav" class="nav bot-button hidden"></div>
+		<div id="left-nav" class="nav side-button" target="about" aria-label="About Sarah"><h2> About Sarah </h2></div>
+		<div id="right-nav" class="nav side-button" target="testimonials" aria-label="Testimonials"><h2>Testimonials</h2></div>
+		<div id="bot-nav" class="nav bot-button" target="contact" aria-label="Contact" ><h2> Contact </h2></div>
+	</nav>
+	
+	<main id="content" class="site-content">
