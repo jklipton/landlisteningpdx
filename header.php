@@ -4,7 +4,12 @@
  */
 
 $current_post = the_title();
-
+$links = [
+	"Landlistening" => array(),
+	"About" => array(),
+	"Testimonials" => array(),
+	"Contact" => array(),
+]
 
 ?>
 <!doctype html>
