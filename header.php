@@ -1,13 +1,20 @@
 <?php
 /**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package Landlistening_PDX
  */
+
+// $current_post = get_title();
+// $about = array('About Sarah', '/about');
+// $home = array('Landlistening', '/');
+// $test = array('Testimonials', '/testimonials');
+// $contact = array('Contact', '/contact');
+
+// $links = [
+// 	"Landlistening" => array(null, $about, $test, $contact),
+// 	"About" => array(null, $test, $home, $contact),
+// 	"Testimonials" => array(null, $home, $about, $contact),
+// 	"Contact" => array($home, $about, $test, null),
+// ];
 
 ?>
 <!doctype html>
@@ -24,35 +31,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
+	<!-- header.php -->
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$landlistening_pdx_description = get_bloginfo( 'description', 'display' );
-			if ( $landlistening_pdx_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $landlistening_pdx_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		<nav class="site-nav">
+		<?php 
+		$current_post;
+		$links[$current_post][1];
+		// $currentLinks = $links[the_title()];
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'landlistening-pdx' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+		// // for ($i = 0; $i <= count($currentLinks); $i++) {
+		// // 	$thisLink = $currentLinks[$i];
+		// // 	if(!$thisLink) continue;
+		// // 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
+		// // }
+	
+		?>
+		</nav>
+	</header>
+	   <div id="content" class="site-content">

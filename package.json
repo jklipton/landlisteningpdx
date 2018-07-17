@@ -1,0 +1,25 @@
+{
+  "name": "landlisteningpdx",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --output-style compressed --include-path scss sass/source.scss style.css",
+    "watch": "nodemon -e scss -x \"npm run css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jklipton/landlisteningpdx.git"
+  },
+  "author": "Jennifer Lipton",
+  "license": "GPU",
+  "bugs": {
+    "url": "https://github.com/jklipton/landlisteningpdx/issues"
+  },
+  "homepage": "https://github.com/jklipton/landlisteningpdx#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  }
+}

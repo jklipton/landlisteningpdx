@@ -1,0 +1,30 @@
+nav {
+    display: grid;
+    grid-template-columns: 3fr 35% 2fr 35% 3fr;
+    grid-template-rows: 1fr 35% 2fr 35% 1fr;
+
+    > * { visibility: hidden; }
+
+    li { 
+        visibility: visible; 
+        background-color: white;
+        text-align: center;
+        list-style-type: none;
+    }
+    
+    li:first-child, li:last-child { 
+      grid-column-start: 3;
+    }
+
+    li:nth-child(2), li:nth-child(3){
+      grid-row-start: 3;
+    }
+
+    li:nth-child(3){
+      grid-column-start: 5;
+    }
+
+    li:last-child{ 
+      grid-row-start: 5; 
+    }
+  }
