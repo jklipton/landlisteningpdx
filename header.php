@@ -44,10 +44,7 @@ $links = [
 		// // 	if(!$thisLink) continue;
 		// // 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
 		// // }
-		
-		// for ($i = 0; $i <= count($currentLinks); $i++) {
-		// 	echo('test' + $i);
-		// }
+	
 		?>
 		</nav>
 	</header>
