@@ -3,18 +3,18 @@
  * @package Landlistening_PDX
  */
 
-$current_post = get_title();
-$about = array('About Sarah', '/about');
-$home = array('Landlistening', '/');
-$test = array('Testimonials', '/testimonials');
-$contact = array('Contact', '/contact');
+// $current_post = get_title();
+// $about = array('About Sarah', '/about');
+// $home = array('Landlistening', '/');
+// $test = array('Testimonials', '/testimonials');
+// $contact = array('Contact', '/contact');
 
-$links = [
-	"Landlistening" => array(null, $about, $test, $contact),
-	"About" => array(null, $test, $home, $contact),
-	"Testimonials" => array(null, $home, $about, $contact),
-	"Contact" => array($home, $about, $test, null),
-];
+// $links = [
+// 	"Landlistening" => array(null, $about, $test, $contact),
+// 	"About" => array(null, $test, $home, $contact),
+// 	"Testimonials" => array(null, $home, $about, $contact),
+// 	"Contact" => array($home, $about, $test, null),
+// ];
 
 ?>
 <!doctype html>
