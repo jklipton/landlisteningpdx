@@ -34,7 +34,8 @@ $links = [
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
 		<?php 
-		echo($current_post)
+		$current_post;
+		$links[$current_post][1];
 		// $currentLinks = $links[the_title()];
 
 		// // for ($i = 0; $i <= count($currentLinks); $i++) {
