@@ -3,6 +3,9 @@
  * @package Landlistening_PDX
  */
 
+$current_post = the_title();
+
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
