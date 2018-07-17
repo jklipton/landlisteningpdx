@@ -1,25 +1,25 @@
 nav {
     background-color: peachpuff;
     display: grid;
-    grid-template-columns: 3fr 35% 2fr 35% 1fr 3fr;
+    grid-template-columns: 3fr 35% 2fr 35% 3fr;
     grid-template-rows: 1fr 35% 2fr 35% 1fr;
-    grid-template-areas: ". . top . ." 
-                         ". . . . ." 
-                         "side . . . side" 
-                         ". . . . ." 
-                         ". . bot . .";
 
     > * { visibility: hidden; }
-    li { 
-      visibility: visible; 
-      grid-area: side 
-      }
+    li { visibility: visible; }
     
-    li:first-child{
-      grid-area: top;
+    li:first-child, li:last-child { 
+      grid-column-start: 3;
     }
 
-    li:last-child{
-      grid-area: bot;
+    li:nth-child(2), li:nth-child(3){
+      grid-row-start: 3;
+    }
+
+    li:nth-child(3){
+      grid-column-start: 5;
+    }
+
+    li:last-child{ 
+      grid-row-start: 5; 
     }
   }
