@@ -4,7 +4,13 @@ nav {
     grid-template-rows: 1fr 35% 2fr 35% 1fr;
 
     > * { visibility: hidden; }
-    li { visibility: visible; }
+
+    li { 
+        visibility: visible; 
+        background-color: white;
+        text-align: center;
+        list-style-type: none;
+    }
     
     li:first-child, li:last-child { 
       grid-column-start: 3;
