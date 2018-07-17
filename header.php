@@ -31,21 +31,21 @@ $links = [
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 
 	<!-- header.php -->
-	<?php $current_post ?>
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
 		<?php 
-		$currentLinks = $links[the_title()];
+		echo($current_post)
+		// $currentLinks = $links[the_title()];
 
-		// for ($i = 0; $i <= count($currentLinks); $i++) {
-		// 	$thisLink = $currentLinks[$i];
-		// 	if(!$thisLink) continue;
-		// 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
-		// }
+		// // for ($i = 0; $i <= count($currentLinks); $i++) {
+		// // 	$thisLink = $currentLinks[$i];
+		// // 	if(!$thisLink) continue;
+		// // 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
+		// // }
 		
-		for ($i = 0; $i <= count($currentLinks); $i++) {
-			echo('test' + $i);
-		}
+		// for ($i = 0; $i <= count($currentLinks); $i++) {
+		// 	echo('test' + $i);
+		// }
 		?>
 		</nav>
 	</header>
