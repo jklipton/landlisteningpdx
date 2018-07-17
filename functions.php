@@ -122,10 +122,9 @@ add_action( 'widgets_init', 'landlistening_pdx_widgets_init' );
 function landlistening_pdx_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), [], WP_ENV == 'production' ? $_my_theme->get('Version') : time());
 
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'landlistening-pdx-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'landlistening-pdx-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
