@@ -16,17 +16,7 @@ content.php
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				landlistening_pdx_posted_on();
-				landlistening_pdx_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php landlistening_pdx_post_thumbnail(); ?>
@@ -52,8 +42,4 @@ content.php
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php landlistening_pdx_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </section><!-- #post-<?php the_ID(); ?> -->
