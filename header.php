@@ -34,6 +34,7 @@ $links = [
 	<?php $current_post ?>
 	<header id="masthead" class="site-header">
 		<nav class="site-nav">
+			frogs
 		<?php 
 		$links[$current_post][1]
 		// $currentLinks = $links[the_title()];
