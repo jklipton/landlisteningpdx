@@ -37,11 +37,16 @@ $links = [
 		<?php 
 		$currentLinks = $links[the_title()];
 
+		// for ($i = 0; $i <= count($currentLinks); $i++) {
+		// 	$thisLink = $currentLinks[$i];
+		// 	if(!$thisLink) continue;
+		// 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
+		// }
+		
 		for ($i = 0; $i <= count($currentLinks); $i++) {
-			$thisLink = $currentLinks[$i];
-			if(!$thisLink) continue;
-			echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
-		}?>
+			echo('test' + $i);
+		}
+		?>
 		</nav>
 	</header>
 	   <div id="content" class="site-content">
