@@ -6,8 +6,9 @@
  *
  * @package Landlistening_PDX
  */
+$backgroundImg = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 ?>
-<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
 <script>
     console.log(<?= json_encode($backgroundImg); ?>);
 </script>
