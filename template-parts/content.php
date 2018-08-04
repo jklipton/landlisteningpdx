@@ -6,19 +6,12 @@
  *
  * @package Landlistening_PDX
  */
-
-$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-
 ?>
+<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif; ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
 	</header><!-- .entry-header -->
 
 	<?php landlistening_pdx_post_thumbnail(); ?>
