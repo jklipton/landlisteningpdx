@@ -8,6 +8,9 @@
  */
 ?>
 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+<script>
+    console.log(<?= json_encode($backgroundImg); ?>);
+</script>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 	<header class="entry-header">
