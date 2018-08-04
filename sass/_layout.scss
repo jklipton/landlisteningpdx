@@ -1,8 +1,13 @@
 
 /* Primary
 	 ========================================================================== */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
-#primary {
+main {
     width: 400vw;
     height: 100vh;
 }
