@@ -133,10 +133,19 @@ function landlistening_pdx_scripts() {
 add_action( 'wp_enqueue_scripts', 'landlistening_pdx_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Register nav menus.
  */
-require get_template_directory() . '/inc/custom-header.php';
+function custom_navigation_menus() {
 
+	$locations = array(
+		'desktop_menu' => __( 'Desktop Menu', 'text_domain' ),
+		'tablet_menu' => __( 'Tablet Menu', 'text_domain' ),
+		'mobile_menu' => __( 'Menu Menu', 'text_domain' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'custom_navigation_menus' );
 /**
  * Custom template tags for this theme.
  */
