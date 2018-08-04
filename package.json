@@ -4,7 +4,8 @@
   "description": "Custom theme for Landlistening PDX, built on PHP, JS, and SASS. Unauthorized use prohibited.",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --output-style compressed --include-path scss sass/source.scss style.css",
+    "css": "node-sass --include-path scss sass/source.scss style.css",
+    "css:prod": "node-sass --output-style compressed --include-path scss sass/source.scss style.css",
     "watch": "nodemon -e scss -x \"npm run css\""
   },
   "repository": {
