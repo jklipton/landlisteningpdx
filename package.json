@@ -1,11 +1,7 @@
 {
   "name": "landlisteningpdx",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
-=======
   "description": "Custom theme for Landlistening PDX, built on PHP, JS, and SASS. Unauthorized use prohibited.",
->>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
   "main": "index.js",
   "scripts": {
     "css": "node-sass --output-style compressed --include-path scss sass/source.scss style.css",
