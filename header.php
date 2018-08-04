@@ -30,16 +30,5 @@
 header.php
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
-	<nav id="site-navigation" class="main-navigation">
-		<!-- Notes: Menu is hidden on desktop view, 
-		links set for "Landing Page" and dynamically changed in pageView.js on navigation.  
-		If updating, please leave set for "Landing Page" and set "Target" attribute to 
-		the EXACT id of the destination section as seen in the "main" portion of the HTML. -->
-		<button class="menu bot-button hidden menu-toggle" aria-label="Menu" aria-controls="primary-menu" aria-expanded="false"><h2>Menu</h2></button>
-		<div id="top-nav" class="nav bot-button hidden"></div>
-		<div id="left-nav" class="nav side-button" target="about" aria-label="About Sarah"><h2> About Sarah </h2></div>
-		<div id="right-nav" class="nav side-button" target="testimonials" aria-label="Testimonials"><h2>Testimonials</h2></div>
-		<div id="bot-nav" class="nav bot-button" target="contact" aria-label="Contact" ><h2> Contact </h2></div>
-	</nav>
 	
-	<main id="content" class="site-content">
+	<div id="page-content" class="site-content">

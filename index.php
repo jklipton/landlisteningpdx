@@ -6,7 +6,7 @@
 get_header();
 ?>
 index.php
-	<div id="primary" class="content-area">
+	<main class="content-area">
 		<div class="site-main">
             index.php
 		<?php
@@ -35,7 +35,6 @@ index.php
 		?>
 
 		</div>
-	</div><!-- #primary -->
-	</main>
+	</main><!-- #primary -->
 <?php
 get_footer();

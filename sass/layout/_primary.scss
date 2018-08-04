@@ -7,6 +7,7 @@ body {
     overflow: hidden;
 }
 
+// Post content container
 main {
     width: 400vw;
     height: 100vh;
@@ -15,4 +16,14 @@ main {
 .post {
     width: 100vw;
     height: 100vh;
+}
+
+//overlayed footer + nav container
+
+#site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
 }
