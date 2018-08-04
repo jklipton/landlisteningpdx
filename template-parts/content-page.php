@@ -4,8 +4,12 @@
  */
 
 ?>
+<<<<<<< HEAD
 
 
+=======
+content-page.php
+>>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     content-page.php
 	<header class="entry-header">

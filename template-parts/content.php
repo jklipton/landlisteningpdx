@@ -8,26 +8,21 @@
  */
 
 ?>
+<<<<<<< HEAD
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     content.php
+=======
+content.php
+<section id="post-<?php the_title(); ?>" class="<?php post_class(); ?>  role="page">
+>>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				landlistening_pdx_posted_on();
-				landlistening_pdx_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php landlistening_pdx_post_thumbnail(); ?>
@@ -53,8 +48,4 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php landlistening_pdx_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</section><!-- #post-<?php the_ID(); ?> -->
