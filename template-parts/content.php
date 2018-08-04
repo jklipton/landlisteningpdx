@@ -9,7 +9,7 @@
 
 ?>
 content.php
-<section id="post-<?php the_title(); ?>" class="<?php post_class(); ?>  role="page">
+<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
