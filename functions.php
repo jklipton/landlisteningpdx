@@ -139,7 +139,6 @@ function custom_navigation_menus() {
 
 	$locations = array(
 		'desktop_menu' => __( 'Desktop Menu', 'text_domain' ),
-		'tablet_menu' => __( 'Tablet Menu', 'text_domain' ),
 		'mobile_menu' => __( 'Menu Menu', 'text_domain' ),
 	);
 	register_nav_menus( $locations );

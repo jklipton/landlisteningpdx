@@ -9,7 +9,7 @@
 
 ?>
 content.php
-<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page">
+<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -22,6 +22,7 @@ content.php
 	<?php landlistening_pdx_post_thumbnail(); ?>
 
 	<div class="entry-content">
+			
 		<?php
 		the_content( sprintf(
 			wp_kses(
