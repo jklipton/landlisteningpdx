@@ -6,11 +6,12 @@
  *
  * @package Landlistening_PDX
  */
+$bgImg = get_the_post_thumbnail_url( $post = ID);
 $backgroundImg = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 ?>
 
 <script>
-    console.log(<?= json_encode($backgroundImg); ?>);
+    console.log(<?= json_encode($bgImg); ?>);
 </script>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
