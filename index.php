@@ -7,7 +7,7 @@ get_header();
 ?>
 index.php
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<div class="site-main">
             index.php
 		<?php
 		if ( have_posts() ) :
@@ -34,8 +34,8 @@ index.php
 		endif;
 		?>
 
-		</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
-
+	</main>
 <?php
 get_footer();
