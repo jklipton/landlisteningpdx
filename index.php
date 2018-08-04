@@ -12,8 +12,6 @@ index.php
 		<?php
 		if ( have_posts() ) :
 
-<<<<<<< HEAD
-=======
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -27,7 +25,6 @@ index.php
 
 			endwhile;
 
->>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
 			the_posts_navigation();
 
 		else :

@@ -8,14 +8,8 @@
  */
 
 ?>
-<<<<<<< HEAD
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    content.php
-=======
 content.php
 <section id="post-<?php the_title(); ?>" class="<?php post_class(); ?>  role="page">
->>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :

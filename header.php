@@ -30,27 +30,6 @@
 header.php
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
-<<<<<<< HEAD
-
-	<!-- header.php -->
-	<header id="masthead" class="site-header">
-		<nav class="site-nav">
-		<?php 
-		$current_post;
-		$links[$current_post][1];
-		// $currentLinks = $links[the_title()];
-
-		// // for ($i = 0; $i <= count($currentLinks); $i++) {
-		// // 	$thisLink = $currentLinks[$i];
-		// // 	if(!$thisLink) continue;
-		// // 	echo(`<li><a href='$thisLink(1)'>$thisLink(0)</a></li>`);
-		// // }
-	
-		?>
-		</nav>
-	</header>
-	   <div id="content" class="site-content">
-=======
 	<nav id="site-navigation" class="main-navigation">
 		<!-- Notes: Menu is hidden on desktop view, 
 		links set for "Landing Page" and dynamically changed in pageView.js on navigation.  
@@ -64,4 +43,3 @@ header.php
 	</nav>
 	
 	<main id="content" class="site-content">
->>>>>>> 292bb8a242eeda0d6aabc3a0265d05576d90c977
