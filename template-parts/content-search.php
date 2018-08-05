@@ -23,8 +23,6 @@ content-search.php
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php landlistening_pdx_post_thumbnail(); ?>
-
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
