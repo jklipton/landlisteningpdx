@@ -13,7 +13,7 @@ $thumb_url = $backgroundImg[0];
 
 ?>
 <script>
-    console.log(<?= json_encode($backgroundImg); ?>);
+    console.log(<?= json_encode($thumb_url_array); ?>);
 </script>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $thumb_url;  ?>'); ">
