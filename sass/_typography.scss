@@ -1,10 +1,17 @@
-/* Main
-========================================================================== */
-
-a, a:visited {
+a, a:visited, a:active {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Menus
+========================================================================== */
+.menu, .menu a {
+    color: $gray;
 }

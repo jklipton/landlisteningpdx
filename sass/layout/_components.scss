@@ -1,8 +1,18 @@
-/* Components
+
+skip-link {
+    visibility: hidden;
+}
+
+/* Menus
 ========================================================================== */
+.menu {
+    li {
+        display: inline;
+    }
+}
 
-//Footer
-
+/* Footer
+========================================================================== */
 footer {
     width: fit-content;
     margin: auto;

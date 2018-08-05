@@ -23,8 +23,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Typography
 # Layout
-
 
 /*--------------------------------------------------------------
 # Normalize
@@ -633,13 +633,13 @@ template {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-/* Primary
-	 ========================================================================== */
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
 
+/* Page Container
+========================================================================== */
 main {
   width: 400vw;
   height: 100vh; }
@@ -648,6 +648,8 @@ main {
   width: 100vw;
   height: 100vh; }
 
+/* Footer
+========================================================================== */
 #site-footer {
   position: absolute;
   bottom: 0;
@@ -655,7 +657,15 @@ main {
   width: 100vw;
   height: fit-content; }
 
-/* Components
+skip-link {
+  visibility: hidden; }
+
+/* Menus
+========================================================================== */
+.menu li {
+  display: inline; }
+
+/* Footer
 ========================================================================== */
 footer {
   width: fit-content;

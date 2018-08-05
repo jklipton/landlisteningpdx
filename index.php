@@ -5,36 +5,34 @@
 
 get_header();
 ?>
-index.php
-	<main class="content-area">
-		<div class="site-main">
-            index.php
-		<?php
-		if ( have_posts() ) :
+<main class="content-area">
+	<div class="site-main">
+	<?php
+	if ( have_posts() ) :
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		/* Start the Loop */
+		while ( have_posts() ) :
+			the_post();
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+			/*
+				* Include the Post-Type-specific template for the content.
+				* If you want to override this in a child theme, then include a file
+				* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				*/
+			get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+		endwhile;
 
-			the_posts_navigation();
+		the_posts_navigation();
 
-		else :
+	else :
 
-			get_template_part( 'template-parts/content', 'none' );
+		get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+	endif;
+	?>
 
-		</div>
-	</main><!-- #primary -->
+	</div>
+</main><!-- #primary -->
 <?php
 get_footer();

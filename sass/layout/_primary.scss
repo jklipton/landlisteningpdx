@@ -1,13 +1,12 @@
-
-/* Primary
-	 ========================================================================== */
 body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-// Post content container
+
+/* Page Container
+========================================================================== */
 main {
     width: 400vw;
     height: 100vh;
@@ -18,7 +17,8 @@ main {
     height: 100vh;
 }
 
-//overlayed footer + nav container
+/* Footer
+========================================================================== */
 
 #site-footer {
     position: absolute;
