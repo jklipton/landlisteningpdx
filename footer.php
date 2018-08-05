@@ -10,7 +10,6 @@
  */
 
 ?>
-footer.php
 	</div><!-- #content -->
 	<div id="site-footer">
 		<footer id="colophon" class="site-footer">
