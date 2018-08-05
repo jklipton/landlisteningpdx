@@ -9,11 +9,11 @@
 $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');
 $post_id = get_the_ID();
 $thumb_url_array = wp_get_attachment_image_src($post_id, 'full', true);
-$thumb_url = $backgroundImg[0];
+$thumb_url = $thumb_url_array[0];
 
 ?>
 <script>
-    console.log(<?= json_encode($thumb_url_array); ?>);
+    console.log(<?= json_encode($post_id); ?>);
 </script>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $thumb_url;  ?>'); ">
