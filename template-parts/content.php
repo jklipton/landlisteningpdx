@@ -6,9 +6,9 @@
  *
  * @package Landlistening_PDX
  */
-
-$thumb_id = get_post_thumbnail_id();
-$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+$post_id = get_the_ID();
+$thumb_url_array = wp_get_attachment_image_src($post_id, 'full', true);
 $thumb_url = $thumb_url_array[0];
 
 ?>
