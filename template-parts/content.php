@@ -6,12 +6,8 @@
  *
  * @package Landlistening_PDX
  */
-$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');
-$post_id = get_the_ID();
-$thumb_url_array = wp_get_attachment_image_src($post->ID, 'full', true);
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
-$img_url = $featured_img_url[0];
-
+$featured_imgs = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+$img_url = $featured_imgs[0];
 ?>
 <script>
     console.log(<?= json_encode($post); ?>);
