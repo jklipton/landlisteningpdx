@@ -9,30 +9,32 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 ?>
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>'); ">
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
-	</header><!-- .entry-header -->
+	<arcticle class="main-post">
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
+		</header><!-- .entry-header -->
 
-	<div class="entry-content">
-			
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'landlistening-pdx' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
+		<div class="entry-content">
+				
+			<?php
+			the_content( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'landlistening-pdx' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'landlistening-pdx' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'landlistening-pdx' ),
+				'after'  => '</div>',
+			) );
+			?>
+		</div><!-- .entry-content -->
+	</article>
 </section><!-- #post-<?php the_ID(); ?> -->

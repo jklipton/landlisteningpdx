@@ -1,4 +1,5 @@
-a, a:visited, a:active {
+
+a, a:visited, a:active, a:-webkit-any-link {
     text-decoration: none;
 }
 
@@ -13,5 +14,6 @@ ul {
 /* Menus
 ========================================================================== */
 .menu, .menu a {
+    text-transform: uppercase;
     color: $gray;
 }

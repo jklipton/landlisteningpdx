@@ -26,10 +26,9 @@
 
 		
 			<div class="site-info">
-				<span class="copyright">All site content copyright ©<?php echo date('Y'); ?> Sarah Taylor. All rights reserved.</span>
-				<span class="copyright">Page design copyright ©<?php echo date('Y'); ?>
-					<a href="jklipton.io" target="_blank">Jen Lipton</a>
-					. All rights reserved.</span>
+				<span class="copyright">All site content copyright © <?php echo date('Y'); ?> Sarah Taylor. All rights reserved.</span>
+				<span class="copyright">Page design copyright © <?php echo date('Y'); ?>
+					<a href="http://jklipton.io" target="_blank">Jen Lipton</a>. All rights reserved.</span>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #site-footer -->
