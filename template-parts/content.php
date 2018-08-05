@@ -10,15 +10,13 @@ $featured_imgs = get_the_post_thumbnail_url(get_the_ID(),'full');
 $img_url = $featured_imgs[0];
 ?>
 <script>
-    console.log(<?= json_encode($post); ?>);
+    console.log(<?= json_encode(landlistening_pdx_post_thumbnail()); ?>);
 </script>
 content.php
 <section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $img_url;  ?>'); ">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
 	</header><!-- .entry-header -->
-
-	<?php landlistening_pdx_post_thumbnail(); ?>
 
 	<div class="entry-content">
 			
