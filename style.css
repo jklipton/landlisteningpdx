@@ -657,7 +657,7 @@ main {
   width: 100vw;
   height: fit-content; }
 
-skip-link {
+.skip-link {
   visibility: hidden; }
 
 /* Menus

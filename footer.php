@@ -26,18 +26,10 @@
 
 		
 			<div class="site-info">
-				footer.php
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'landlistening-pdx' ) ); ?>">
-					<?php
-					/* translators: %s: CMS name, i.e. WordPress. */
-					printf( esc_html__( 'Proudly powered by %s', 'landlistening-pdx' ), 'WordPress' );
-					?>
-				</a>
-				<span class="sep"> | </span>
-					<?php
-					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s.', 'landlistening-pdx' ), 'landlistening-pdx', '<a href="http://jklipton.io">Jennifer Lipton</a>' );
-					?>
+				<span class="copyright">All site content copyright ©<?php echo date('Y'); ?> Sarah Taylor. All rights reserved.</span>
+				<span class="copyright">Page design copyright ©<?php echo date('Y'); ?>
+					<a href="jklipton.io" target="_blank">Jen Lipton</a>
+					. All rights reserved.</span>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #site-footer -->
