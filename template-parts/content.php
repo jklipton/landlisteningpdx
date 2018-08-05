@@ -6,13 +6,17 @@
  *
  * @package Landlistening_PDX
  */
+
+$thumb_id = get_post_thumbnail_id();
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url = $thumb_url_array[0];
+
 ?>
-<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');?>
 <script>
     console.log(<?= json_encode($backgroundImg); ?>);
 </script>
 content.php
-<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $thumb_url;  ?>'); ">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
 	</header><!-- .entry-header -->
