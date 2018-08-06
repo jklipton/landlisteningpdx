@@ -1,12 +1,24 @@
 .skip-link {
     visibility: hidden;
+    position: absolute;
+}
+
+/* Main Post
+========================================================================== */
+article{
+    padding: 5%;
 }
 
 /* Menus
 ========================================================================== */
 .menu {
+    ul {
+        padding: 0.2rem;
+    }
+
     li {
         display: inline;
+        padding: 0.2rem;
     }
 }
 
