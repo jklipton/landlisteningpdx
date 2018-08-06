@@ -340,9 +340,6 @@ a, a:visited, a:active, a:-webkit-any-link {
 a:hover {
   text-decoration: underline; }
 
-ul {
-  list-style-type: none; }
-
 /* Breakdown
 ========================================================================== */
 h1 {
@@ -354,14 +351,22 @@ h2 {
 h3 {
   font-size: 1.17em; }
 
-.small {
-  color: #828282; }
+.small, .small a {
+  font-size: 0.5em; }
+
+.copyright {
+  color: #828282;
+  padding: 0em .3em; }
 
 /* Menus
 ========================================================================== */
 .menu, .menu a {
   text-transform: uppercase;
   color: #828282; }
+
+.menu ul {
+  list-style-type: none;
+  -webkit-padding-start: 40px; }
 
 /*--------------------------------------------------------------
 # Layout
