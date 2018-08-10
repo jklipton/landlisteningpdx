@@ -5,9 +5,9 @@
  */
 (function($) {
   
-
   mobileNavInit();
-  
+  $('.site-info').show();
+
   function mobileNavInit() {
     const mobileMenu = $('#menu-mobile-menu');
     if(!mobileMenu) return;

@@ -422,6 +422,9 @@ nav#site-navigation {
   display: flex;
   flex-direction: column-reverse;
   padding: 0.2rem; }
+  #menu-mobile-menu li {
+    width: 10em;
+    padding: 0.5em 0em; }
 
 .skip-link {
   visibility: hidden;
