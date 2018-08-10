@@ -11,13 +11,13 @@
   const menuArray = mobileMenu.children('li');
   const menuButton = menuArray.first();
   menuButton.addClass('mobile-menu-first');
-  menuArray.not('mobile-menu-first').addClass('mobile-menu-slide');
+  menuArray.not('.mobile-menu-first').addClass('mobile-menu-slide');
   
   toggleMobileMenu();
   menuButton.click(toggleMobileMenu);
 
   function toggleMobileMenu() {
-    $('mobile-menu-slide').slideToggle(1000);
+    $('.mobile-menu-slide').slideToggle(1000);
     menuButton.show();
   }
 })(jQuery);
