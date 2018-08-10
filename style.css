@@ -457,9 +457,6 @@ nav#site-navigation {
 
 /* Main Post
 ========================================================================== */
-[role="page"] {
-  height: 100%; }
-
 article {
   padding: 5%; }
 
