@@ -120,6 +120,9 @@ add_action( 'widgets_init', 'landlistening_pdx_widgets_init' );
  * Enqueue scripts and styles.
  */
 function landlistening_pdx_scripts() {
+
+	wp_enqueue_script("jquery");
+	
 	wp_enqueue_style( 'style', get_stylesheet_uri(), [], WP_ENV == 'production' ? $_my_theme->get('Version') : time());
 
 	wp_enqueue_script( 'landlistening-pdx-navigation', get_template_directory_uri() . '/js/navigation.js', array(), WP_ENV == 'production' ? $_my_theme->get('Version') : time(), true );
