@@ -6,12 +6,14 @@
 (function($) {
   
   $('.site-info').show();
+  console.log('show site info');
   mobileNavInit();
 
   function mobileNavInit() {
     const mobileMenu = $('#menu-mobile-menu');
     if(!mobileMenu) return;
     $('.site-info').hide();
+    console.log('hide site info');
 
     const menuArray = mobileMenu.children('li');
     const menuButton = menuArray.first();
