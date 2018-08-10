@@ -7,7 +7,6 @@
   
   $('.site-info').show();
   const isMobile = $('.main-navigation').find('.menu-mobile-menu-container');
-  console.log(isMobile);
   isMobile.length ? mobileNavInit() : null;
 
   function mobileNavInit() {

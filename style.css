@@ -386,7 +386,8 @@ html, body, main {
 
 .post {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 /* Footer
 ========================================================================== */
@@ -433,6 +434,9 @@ nav#site-navigation {
 
 /* Main Post
 ========================================================================== */
+.main-post {
+  margin: 2em; }
+
 article {
   padding: 5%; }
 
@@ -443,4 +447,9 @@ footer {
   margin: auto;
   background: #ffffff;
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  padding: 0em 0em 1em 0em; }
+
+.site-info {
+  display: flex;
+  justify-content: center; }
