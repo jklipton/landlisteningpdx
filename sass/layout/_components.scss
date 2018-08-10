@@ -12,9 +12,9 @@ article{
 /* Menus
 ========================================================================== */
 .menu {
-    ul {
-        padding: 0.2rem;
-    }
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
 
     li {
         display: inline;
@@ -28,4 +28,6 @@ footer {
     width: fit-content;
     margin: auto;
     background: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
 }

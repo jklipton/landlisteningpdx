@@ -418,4 +418,6 @@ article {
 footer {
   width: fit-content;
   margin: auto;
-  background: #ffffff; }
+  background: #ffffff;
+  display: flex;
+  flex-flow: column nowrap; }
