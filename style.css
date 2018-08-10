@@ -342,11 +342,24 @@ a:hover {
 
 /* Breakdown
 ========================================================================== */
+html {
+  font-family: Calibri, sans-serif; }
+
 h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-family: 'Montserrat', sans-serif;
+  color: #828282;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .11em;
+  line-height: 1.4em;
+  margin: .9em; }
+
+h2:hover {
+  color: #D2BBA0; }
 
 h3 {
   font-size: 1.17em; }
@@ -373,10 +386,15 @@ h3 {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
 html, body, main {
   width: 100vw;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  min-width: 320px; }
 
 /* Page Container
 ========================================================================== */

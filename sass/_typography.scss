@@ -9,15 +9,25 @@ a:hover {
 
 /* Breakdown
 ========================================================================== */
+html { font-family: Calibri, sans-serif; }
 h1 { font-size: 2em }
-h2 { font-size: 1.5em }
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #828282;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .11em;
+    line-height: 1.4em;
+    margin: .9em;
+}
+h2:hover { color: #D2BBA0; }
 h3 { font-size: 1.17em }
 .small{
     color: $gray;
     font-size: 0.5em;
     padding: .2em;
 }
-body {}
 
 .copyright { 
     color: $gray; 
