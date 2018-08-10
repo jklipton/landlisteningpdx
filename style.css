@@ -417,7 +417,7 @@ nav#site-navigation {
 
 #menu-mobile-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 0.2rem; }
 
 .skip-link {
