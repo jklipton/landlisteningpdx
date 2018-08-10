@@ -6,9 +6,9 @@
 (function($) {
   
   $('.site-info').show();
-  const isDesktop = $('.main-navigation').find('.menu-mobile-menu-container');
-  console.log(isDesktop);
-  isDesktop.length ? null : mobileNavInit();
+  const isMobile = $('.main-navigation').find('.menu-mobile-menu-container');
+  console.log(isMobile);
+  isMobile.length ? mobileNavInit() : null;
 
   function mobileNavInit() {
     const mobileMenu = $('#menu-mobile-menu');
