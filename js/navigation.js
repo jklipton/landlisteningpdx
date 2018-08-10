@@ -6,16 +6,14 @@
 (function($) {
   
   $('.site-info').show();
-  console.log('show site info');
   mobileNavInit();
 
   function mobileNavInit() {
-	const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
-	console.log('mobileMenu', mobileMenu);
+    const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
+    console.log('mobileMenu', mobileMenu);
     if(!mobileMenu.length) return;
     $('.site-info').hide();
-    console.log('hide site info');
-
+    
     const menuArray = mobileMenu[0].children('li');
     const menuButton = menuArray.first();
     menuButton.addClass('mobile-menu-first');
