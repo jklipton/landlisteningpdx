@@ -5,8 +5,8 @@
  */
 (function($) {
   
-  mobileNavInit();
   $('.site-info').show();
+  mobileNavInit();
 
   function mobileNavInit() {
     const mobileMenu = $('#menu-mobile-menu');
