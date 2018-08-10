@@ -8,14 +8,13 @@
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 ?>
-<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>'); ">
-	<div class="main-post">
-		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
-		</header><!-- .entry-header -->
+<div class="entry-content">
 
-		<div class="entry-content">
-				
+	<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>'); ">
+		<div class="main-post">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
+			</header><!-- .entry-header -->				
 			<?php
 			the_content( sprintf(
 				wp_kses(
@@ -35,6 +34,6 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				'after'  => '</div>',
 			) );
 			?>
-		</div><!-- .entry-content -->
-	</article>
-</section><!-- #post-<?php the_ID(); ?> -->
+		</div>
+	</section><!-- #post-<?php the_ID(); ?> -->
+</div><!-- .entry-content -->
