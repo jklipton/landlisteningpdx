@@ -404,10 +404,13 @@ nav#site-navigation {
 
 /* Menus
 ========================================================================== */
-.menu li {
-  display: inline;
-  padding: 0.2rem;
-  text-align: center; }
+.menu {
+  margin: 0; }
+  .menu li {
+    margin: 0;
+    display: inline;
+    padding: 0.2rem;
+    text-align: center; }
 
 #menu-desktop-menu {
   padding: 0rem;
