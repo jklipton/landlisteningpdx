@@ -380,7 +380,7 @@ body {
 
 /* Page Container
 ========================================================================== */
-main, .site-main {
+html, main, .site-main {
   width: 400vw;
   height: 100vh;
   overflow: hidden; }
@@ -405,12 +405,12 @@ nav#site-navigation {
 
 /* Menus
 ========================================================================== */
-.menu {
+#menu-desktop-menu {
   padding: 0rem;
   margin: auto;
   display: flex;
   justify-content: center; }
-  .menu li {
+  #menu-desktop-menu li {
     display: inline;
     padding: 0.2rem; }
 
