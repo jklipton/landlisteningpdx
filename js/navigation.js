@@ -8,7 +8,14 @@
   const mobileMenu = $('#menu-mobile-menu');
   if(!mobileMenu) return;
 
-  mobileMenu.children('li').hide();
-  const menuButton = $('#menu-mobile-menu').firstChild;
-  menuButton.show();
+  const menuArray = mobileMenu.children('li');
+  const menuButton = menuArray.first();
+  
+  toggleMobileMenu();
+  menuButton.click(toggleMobileMenu);
+
+  function toggleMobileMenu() {
+    menuArray.toggle();
+    menuButton.show();
+  }
 })(jQuery);
