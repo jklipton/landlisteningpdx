@@ -349,17 +349,7 @@ h1 {
   font-size: 2em; }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #828282;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .11em;
-  line-height: 1.4em;
-  margin: .9em; }
-
-h2:hover {
-  color: #D2BBA0; }
+  font-size: 1.5em; }
 
 h3 {
   font-size: 1.17em; }
@@ -377,7 +367,17 @@ h3 {
 ========================================================================== */
 .menu, .menu a {
   text-transform: uppercase;
-  color: #828282; }
+  color: #828282;
+  font-family: 'Montserrat', sans-serif;
+  color: #828282;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .11em;
+  line-height: 1.4em;
+  margin: .9em; }
+  .menu:hover, .menu a:hover {
+    color: #D2BBA0; }
 
 .menu ul {
   list-style-type: none;
