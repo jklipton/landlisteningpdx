@@ -4,7 +4,7 @@
  * Handles the mobile-menu on mobile devices
  */
 (function($) {
-  console.log('navigation test running');
+  console.log('navigation test running', $);
   const mobileMenu = $('#menu-mobile-menu');
   if(!mobileMenu) return;
 
