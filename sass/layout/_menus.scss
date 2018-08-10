@@ -1,0 +1,25 @@
+/* Menus
+========================================================================== */
+.menu {
+    padding: 0rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    li {
+        display: inline;
+        padding: 0.2rem;
+    }
+}
+
+#menu-mobile-menu {
+    li {
+        display: none;
+    }
+
+    li:first-child {
+        display: block;
+    }
+    
+
+}

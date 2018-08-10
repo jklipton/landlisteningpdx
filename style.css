@@ -382,7 +382,8 @@ body {
 ========================================================================== */
 main {
   width: 400vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .post {
   width: 100vw;
@@ -402,15 +403,6 @@ nav#site-navigation {
   margin: auto;
   width: fit-content; }
 
-.skip-link {
-  visibility: hidden;
-  position: absolute; }
-
-/* Main Post
-========================================================================== */
-article {
-  padding: 5%; }
-
 /* Menus
 ========================================================================== */
 .menu {
@@ -421,6 +413,21 @@ article {
   .menu li {
     display: inline;
     padding: 0.2rem; }
+
+#menu-mobile-menu li {
+  display: none; }
+
+#menu-mobile-menu li:first-child {
+  display: block; }
+
+.skip-link {
+  visibility: hidden;
+  position: absolute; }
+
+/* Main Post
+========================================================================== */
+article {
+  padding: 5%; }
 
 /* Footer
 ========================================================================== */
