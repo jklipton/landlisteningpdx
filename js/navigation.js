@@ -10,7 +10,8 @@
   mobileNavInit();
 
   function mobileNavInit() {
-    const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
+	const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
+	console.log('mobileMenu', mobileMenu);
     if(!mobileMenu.length) return;
     $('.site-info').hide();
     console.log('hide site info');
