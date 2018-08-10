@@ -373,17 +373,16 @@ h3 {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-body {
+html, body, main {
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
 
 /* Page Container
 ========================================================================== */
-html, main, .site-main {
+.site-main {
   width: 400vw;
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
 
 .post {
   width: 100vw;
