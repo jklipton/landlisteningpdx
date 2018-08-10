@@ -405,14 +405,21 @@ nav#site-navigation {
 
 /* Menus
 ========================================================================== */
+.menu li {
+  display: inline;
+  padding: 0.2rem;
+  text-align: center; }
+
 #menu-desktop-menu {
   padding: 0rem;
   margin: auto;
   display: flex;
   justify-content: center; }
-  #menu-desktop-menu li {
-    display: inline;
-    padding: 0.2rem; }
+
+#menu-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem; }
 
 .skip-link {
   visibility: hidden;

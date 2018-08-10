@@ -1,7 +1,11 @@
 /* Menus
 ========================================================================== */
 .menu {
-    
+    li {
+        display: inline;
+        padding: 0.2rem;
+        text-align: center;
+    }
 }
 
 #menu-desktop-menu {
@@ -9,13 +13,10 @@
     margin: auto;
     display: flex;
     justify-content: center;
-
-    li {
-        display: inline;
-        padding: 0.2rem;
-    }
 }
 
 #menu-mobile-menu {
-
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
 }
