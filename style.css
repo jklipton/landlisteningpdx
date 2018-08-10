@@ -380,7 +380,7 @@ body {
 
 /* Page Container
 ========================================================================== */
-main {
+main, .site-main {
   width: 400vw;
   height: 100vh;
   overflow: hidden; }
@@ -413,12 +413,6 @@ nav#site-navigation {
   .menu li {
     display: inline;
     padding: 0.2rem; }
-
-#menu-mobile-menu li {
-  display: none; }
-
-#menu-mobile-menu li:first-child {
-  display: block; }
 
 .skip-link {
   visibility: hidden;
