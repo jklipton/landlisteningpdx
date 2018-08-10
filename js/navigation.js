@@ -10,12 +10,12 @@
   mobileNavInit();
 
   function mobileNavInit() {
-    const mobileMenu = $('#menu-mobile-menu');
-    if(!mobileMenu) return;
+    const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
+    if(!mobileMenu.length) return;
     $('.site-info').hide();
     console.log('hide site info');
 
-    const menuArray = mobileMenu.children('li');
+    const menuArray = mobileMenu[0].children('li');
     const menuButton = menuArray.first();
     menuButton.addClass('mobile-menu-first');
     menuArray.not('.mobile-menu-first').addClass('mobile-menu-slide');
