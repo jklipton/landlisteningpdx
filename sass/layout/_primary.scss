@@ -1,4 +1,4 @@
-* {
+*, * > *{
 	margin: 0;
 	padding: 0;
 }
@@ -16,6 +16,12 @@ html, body, main {
 .site-main{
     width: 400vw;
     height: 100vh;
+}
+
+.entry-content {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .post {

@@ -386,7 +386,7 @@ h3 {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-* {
+*, * > * {
   margin: 0;
   padding: 0; }
 
@@ -401,6 +401,11 @@ html, body, main {
 .site-main {
   width: 400vw;
   height: 100vh; }
+
+.entry-content {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
 
 .post {
   width: 100vw;
@@ -453,8 +458,7 @@ nav#site-navigation {
 /* Main Post
 ========================================================================== */
 [role="page"] {
-  height: 100%;
-  margin: 4em 5em 0em; }
+  height: 100%; }
 
 article {
   padding: 5%; }
