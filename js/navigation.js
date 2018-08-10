@@ -6,15 +6,14 @@
 (function($) {
   
   $('.site-info').show();
-  mobileNavInit();
+  const isMobile = $('.main-navigation').find('.menu-mobile-menu-container');
+  isMobile.length ? null : mobileNavInit();
 
   function mobileNavInit() {
-    const mobileMenu = $('.main-navigation').find('.menu-mobile-menu-container');
-    console.log('mobileMenu', mobileMenu);
-    if(!mobileMenu.length) return;
+    const mobileMenu = $('#menu-mobile-menu');
     $('.site-info').hide();
-    
-    const menuArray = mobileMenu[0].children('li');
+
+    const menuArray = mobileMenu.children('li');
     const menuButton = menuArray.first();
     menuButton.addClass('mobile-menu-first');
     menuArray.not('.mobile-menu-first').addClass('mobile-menu-slide');
