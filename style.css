@@ -351,8 +351,10 @@ h2 {
 h3 {
   font-size: 1.17em; }
 
-.small, .small a {
-  font-size: 0.5em; }
+.small {
+  color: #828282;
+  font-size: 0.5em;
+  padding: .2em; }
 
 .copyright {
   color: #828282;
@@ -395,6 +397,11 @@ main {
   width: 100vw;
   height: fit-content; }
 
+nav#site-navigation {
+  display: block;
+  margin: auto;
+  width: fit-content; }
+
 .skip-link {
   visibility: hidden;
   position: absolute; }
@@ -406,12 +413,14 @@ article {
 
 /* Menus
 ========================================================================== */
-.menu ul {
-  padding: 0.2rem; }
-
-.menu li {
-  display: inline;
-  padding: 0.2rem; }
+.menu {
+  padding: 0rem;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  .menu li {
+    display: inline;
+    padding: 0.2rem; }
 
 /* Footer
 ========================================================================== */
