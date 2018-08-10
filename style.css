@@ -346,7 +346,9 @@ html {
   font-family: Calibri, sans-serif; }
 
 h1 {
-  font-size: 2em; }
+  font-family: Playfair Display, sans-serif;
+  font-size: 2em;
+  color: #3E775F; }
 
 h2 {
   font-size: 1.5em; }

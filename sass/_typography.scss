@@ -10,7 +10,11 @@ a:hover {
 /* Breakdown
 ========================================================================== */
 html { font-family: Calibri, sans-serif; }
-h1 { font-size: 2em }
+h1 { 
+    font-family: Playfair Display, sans-serif; 
+    font-size: 2em; 
+    color: $sage;
+}
 h2 { font-size: 1.5em }
 h3 { font-size: 1.17em }
 .small{
