@@ -5,7 +5,10 @@
 
 /* Logo Header
 ========================================================================== */
-.logo-container {}
+.logo-container {
+    position: absolute;
+    left: calc(100vw - 20vw);
+}
 
 .logo-inner {
     background-color: white;
