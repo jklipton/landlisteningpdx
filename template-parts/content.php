@@ -8,11 +8,6 @@
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 ?>
-<section class="logo-container">
-	<div class="logo-inner">
-		<img src="<?php bloginfo('template_url'); ?>/assets/sarah-taylor-logo.png"/>
-	</div>
-</section>
 <div class="entry-content">
 
 	<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>'); ">

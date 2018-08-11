@@ -30,4 +30,10 @@
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'landlistening-pdx' ); ?></a>
 	
+	<section class="logo-container">
+		<div class="logo-inner">
+			<img src="<?php bloginfo('template_url'); ?>/assets/sarah-taylor-logo.png"/>
+		</div>
+	</section>
+
 	<div id="page-content" class="site-content">
