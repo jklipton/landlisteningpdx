@@ -10,7 +10,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 ?>
 <div class="entry-content">
 
-	<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>; background-repeat: no-repeat; background-size: cover;'); ">
+	<section id="post-<?php the_title(); ?>" <?php post_class(); ?>  role="page" style="background: url('<? echo $featured_img_url;  ?>;'); background-repeat: no-repeat; background-size: cover;">
 		<div class="main-post">
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
