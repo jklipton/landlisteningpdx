@@ -473,7 +473,7 @@ nav#site-navigation {
 
 .logo-inner {
   background-color: white;
-  width: 33vw;
+  width: 18em;
   height: 20vh;
   margin: auto; }
   .logo-inner img {
@@ -489,7 +489,8 @@ article {
   padding: 5%; }
 
 .main-post {
-  margin: 3em; }
+  margin: 12em 3em 3em 3em;
+  height: 100%; }
 
 /* Footer
 ========================================================================== */
