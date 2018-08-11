@@ -485,11 +485,8 @@ nav#site-navigation {
 
 /* Main Post
 ========================================================================== */
-article {
-  padding: 5%; }
-
 .main-post {
-  margin: 12em 3em 3em 3em;
+  margin: 12em 6vw 3em;
   height: 100%; }
 
 /* Footer
