@@ -33,6 +33,7 @@
 	<section class="logo-container">
 		<div class="logo-inner">
 			<img src="<?php bloginfo('template_url'); ?>/assets/sarah-taylor-logo.png"/>
+			<h4 class="logo-blurb">harmoning your functional and spiritual relationship with your land.</h4>
 		</div>
 	</section>
 

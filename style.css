@@ -357,6 +357,11 @@ h2 {
 h3 {
   font-size: 1.17em; }
 
+h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2em;
+  font-style: italic; }
+
 body {
   font-family: Zilla Slab, serif;
   color: #4F4F4F; }
@@ -467,11 +472,13 @@ nav#site-navigation {
 
 .logo-inner {
   background-color: white;
-  width: 20vw;
-  height: 10vh;
+  width: 30vw;
+  height: 20vh;
   margin: auto; }
   .logo-inner img {
-    width: 200px; }
+    width: 10rem;
+    display: block;
+    margin: auto; }
 
 /* Main Post
 ========================================================================== */
