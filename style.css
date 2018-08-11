@@ -459,6 +459,20 @@ nav#site-navigation {
   visibility: hidden;
   position: absolute; }
 
+/* Logo Header
+========================================================================== */
+.logo-container {
+  position: absolute;
+  width: 100vw; }
+
+.logo-inner {
+  background-color: white;
+  width: 20vw;
+  height: 10vh;
+  margin: auto; }
+  .logo-inner img {
+    width: 200px; }
+
 /* Main Post
 ========================================================================== */
 article {
