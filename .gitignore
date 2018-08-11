@@ -74,3 +74,5 @@ typings/
 *Thumbs.db
 *.sass-cache*
 *~imageoptim*
+.sass-cache/
+sass-cache/
