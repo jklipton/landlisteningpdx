@@ -7,13 +7,14 @@
 ========================================================================== */
 .logo-container {
     position: absolute;
-    left: calc(100vw - 20vw);
+    width: 100vw;
 }
 
 .logo-inner {
     background-color: white;
     width: 20vw;
     height: 10vh;
+    margin: auto;
 
     & img {
         width: 200px;
