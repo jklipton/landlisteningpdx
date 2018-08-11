@@ -460,6 +460,9 @@ nav#site-navigation {
 article {
   padding: 5%; }
 
+.main-post {
+  margin: 3em; }
+
 /* Footer
 ========================================================================== */
 footer {
