@@ -3,6 +3,21 @@
     position: absolute;
 }
 
+/* Logo Header
+========================================================================== */
+.logo-container {}
+
+.logo-inner {
+    background-color: white;
+    width: 20vw;
+    height: 10vh;
+
+    & img {
+        width: 200px;
+    }
+}
+
+
 /* Main Post
 ========================================================================== */
 
